@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hermes Delivery</title>
+    <link rel="shortcut icon" href="../img/Logo-Hermes.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad57b9bf14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atomic+Age">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleadmin.css">
+    <link rel="stylesheet" href="../css/stylemotoristas.css">
+    
+</head>
+<body>
+    <nav id="navBar" class="flexNav">
+        <div class="textoCentrar">
+            <i class="fa-solid fa-arrow-left" style="font-size:35px; color: grey; " onclick="mostrarPaginaPrincipal()" ></i>
+            <p style="margin-left: 50px; font-size: 30px; color: #8FDC56;">Ordenes disponibles</p>
+        </div>
+        <p class="TituloNav">Hermes</p>
+    <i class="fa-solid fa-user-secret" style="color: #8FDC56; font-size: 40PX;"></i>
+    </nav>
+    <section id="principal-motoristas">
+        <div  id="contenedorOrdenes" class="grid-contenedor" style="display: block ;">
+            <div class="grid" id="ordenesDisponibles">
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #047</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #098</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #122</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #125</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #087</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #150</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #155</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #201</p>
+                </div>
+                <div class="contenedor-motorista">
+                    <p class="fuente-motoristas"> Orden #220</p>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor-asignacion" style="display: none; height: auto; ">
+            <div class="textoCentrar" style="margin-top: 60px ;">
+                <div class="contenedor-orden" style="height: auto ;">
+                    <div class="textoCentrar" id="numeroOrden">
+                    </div>
+                    <div style="margin:20px ;">
+                        <div id="informacion"></div>
+                        <div id="productos"></div>
+                        <div id="recibos"></div>
+                    </div>
+                    <div id="botonSelect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/controladorOrdenes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
