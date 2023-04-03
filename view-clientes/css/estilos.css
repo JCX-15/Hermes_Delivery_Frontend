@@ -24,15 +24,17 @@ body{
 }
 
 .marca-hermes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
     font-family: 'Atomic Age', cursive;
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 40px;
-    color: #FFFFFF;
+}
+
+.navPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #27AE7E 100%;
+}
+
+.botonDesplegable{
+    width: 60px;
 }
 
 input{
@@ -72,4 +74,11 @@ button{
     gap: 15px;
     margin: 20px;
     box-sizing: border-box;
+}
+
+.botonesCategorias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
 }
