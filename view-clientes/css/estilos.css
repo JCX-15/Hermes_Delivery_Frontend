@@ -1,0 +1,84 @@
+body{
+    position: relative;
+    
+    overflow-x: scroll;
+    
+    background: linear-gradient(360deg, rgba(173, 255, 47, 0.84) 0%, #27AE7E 100%);
+    background-attachment: fixed;
+}
+
+#formulario{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 20px;
+    /*Desactivar el margin para pequeños dispositivos*/
+}
+
+#logo{
+    width: 50%;
+    display: block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(4px);
+}
+
+.marca-hermes{
+    font-family: 'Atomic Age', cursive;
+}
+
+.navPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #27AE7E 100%;
+}
+
+.botonDesplegable{
+    width: 60px;
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+
+    margin-bottom: 20px!important;
+
+    color: rgba(0, 0, 0, 0.3);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h5{
+    color: #897F7F;
+}
+
+button{
+    width: 131px;
+    height: 40px;
+    background: rgba(255, 247, 47, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    border-radius: 100px!important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#apartado-registro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#apartado-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.botonesCategorias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+}
