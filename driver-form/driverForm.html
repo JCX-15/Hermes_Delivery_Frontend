@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes - Motoristas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/Logo-Hermes.png">
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&amp;display=swap" rel="stylesheet">
+  </head>
+<body class="bodyColor">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="img/Logo-Hermes.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            </a>
+            <h1 class="txt-hermes">Hermes</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/driverMain.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soporte</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="formulario">
+        <div class="d-flex flex-column justify-content-center gap-3">
+            <strong class="textoInicio">Registrate para formar parte de esta familia</strong>
+            <!--Encontrar la manera de poner en que parte del formulario esta ( {1} -- 2 )-->
+            <!--Los agrego como botones solo para probar las propiedades xd-->
+            <div class="parte-formulario">
+              <td>
+                <form class="formNumeros">
+                    <div id="numeritos">
+                      <button disabled class="imgProgreso1 linea">1</button>
+                      <strong class="txtDeCajas">----</strong>
+                      <button disabled class="imgProgreso2 linea">2</button>
+                    </div>
+                </form>
+              </td>
+            </div>
+
+            <div id="formulario1" class="parte1form" display="block">
+              <h4 class="txtDeCajas">Nombre</h4>
+              <input id="nombreRegis" type="text" name="" class="infoInputs" placeholder="Ingrese su nombre">
+              <h4 class="txtDeCajas">Apellido</h4>
+              <input id="apellidoRegis" type="text" name="" class="infoInputs" placeholder="Ingrese sus apellidos">
+              <h4 class="txtDeCajas">ID</h4>
+              <input id="idRegis" type="number" name="" class="infoInputs" placeholder="Ingresa tu ID (XXXX-XXXX-XXXXX)">
+              <h4 class="txtDeCajas">Numero Telefonico</h4>
+              <input id="numeroTelRegis" type="number" name="" class="infoInputs" placeholder="1234-5678">
+            </div>
+            <div id="formulario2" class="parte2form" display="none">
+              <h4 class="txtDeCajas">eMail</h4>
+              <input id="emailRegis" type="text" name="" class="infoInputs" placeholder="Ingrese un eMail valido">
+              <h4 class="txtDeCajas">Contraseña</h4>
+              <input id="contrasenaRegis" type="text" name="" class="infoInputs" placeholder="Ingrese una Contraseña">
+              <h4 class="txtDeCajas">Vehículo</h4>
+              <select id="vehiculoRegis" name="Vehículo" class="infoInputs">
+                <option value="Auto">Auto</option>
+                <option value="Moto">Moto</option>
+              </select>
+              <h4 class="txtDeCajas">Ciudad</h4>
+              <select id="ciudadRegis" name="Ciudad" class="infoInputs">
+                <option value="SPS">SPS</option>
+                <option value="Tegucigalpa">Tegucigalpa</option>
+              </select>            
+            </div>
+              <!-- Aun no cambia el boton, ni aunque le ponga el id. ni aunque lo quiera awebos -->
+              <div class="centrar">
+                <button class="parte2form botonHermes font-weight-bold btn mt-3 " display="none" onclick="registrarUsuario()" >Registrarse</button>
+                <button class="parte1form botonHermes font-weight-bold btn mt-3 " id="esconderBoton" display="d-inline-block" onclick="cambiarFormulario()">Siguiente</button>
+              </div>
+        </div>
+    </section>  
+
+    <script src="js/controlador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

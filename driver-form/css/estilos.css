@@ -34,10 +34,8 @@
 
 .botonHermes{
     position: absolute;
-    width: 166px;
+    width: 130px;
     height: 48px;
-    left: 40%;
-    top: 90%;
     background-color: #68E265 !important;
     border-color: #68E265 !important;
     color: #000000;
@@ -82,4 +80,29 @@
 
 .parte2form{
     display: none;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenesPendientes{
+    overflow-y: scroll;
+    height:90dvh;
+}
+
+.ordenesActivas{
+    overflow-y: scroll;    
+    height:90dvh;
+}
+
+.ordenesRealizadas{
+    overflow-y: scroll; 
+    height:90dvh;   
+}
+
+ul{
+    padding-left: 0 !important;
 }
