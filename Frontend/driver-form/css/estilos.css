@@ -1,0 +1,85 @@
+#formulario{
+    border-color: rgb(216, 255, 144);
+    border: 10px;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 10%;
+}
+
+.navbar{
+    background: linear-gradient(360deg, rgba(173, 255, 47, 0.84) 0%, #27AE7E 100%);
+}
+
+.txt-hermes{
+    font-family: 'Atomic Age', cursive;
+}
+
+.bodyColor{
+    background: rgba(173, 255, 47, 0.84) 0%;
+}
+
+.textoInicio{
+    text-align: center;
+    text-shadow: 1px #353535;
+}
+
+.infoInputs{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botonHermes{
+    position: absolute;
+    width: 166px;
+    height: 48px;
+    left: 40%;
+    top: 90%;
+    background-color: #68E265 !important;
+    border-color: #68E265 !important;
+    color: #000000;
+}
+
+
+.parte-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.txtDdeCajas{
+    font-family: 'Laila';
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.imgProgreso1{
+    box-sizing: border-box;
+    border-radius: 100% !important;
+    width: fit-content !important;
+    border-width: 10px;
+    background-color: #68E265;
+}
+
+.imgProgreso2{
+    box-sizing: border-box;
+    border-radius: 100% !important;
+    width: fit-content !important;
+    border-width: 10px;
+    background-color: #67e26500;
+    
+}
+
+.linea{
+    display: inline-block;
+}
+
+.parte1form{
+    display: block;
+}
+
+.parte2form{
+    display: none;
+}

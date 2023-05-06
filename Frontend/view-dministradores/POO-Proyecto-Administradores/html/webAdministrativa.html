@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hermes Delivery</title>
+    <link rel="shortcut icon" href="../img/Logo-Hermes.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad57b9bf14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atomic+Age">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleadmin.css">
+    
+</head>
+<body>
+
+    <nav id="navBar" class="flexNav">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars" style="color: #8FDC56 ;font-size: 35px;"></i>
+        </a>
+        <p class="TituloNav">Hermes</p>
+        <i class="fa-solid fa-user-secret" style="color: #8FDC56; font-size: 40PX;"></i>
+    </nav>
+    
+    <div class="contenedor">
+        <div class="conteinerC">
+            <div class="cardC" onclick="dirigirCategoria()">
+                <div class="cardCFlex">
+                    <div>
+                        <p class="tituloC">Administrar Categoria</p>
+                        <p class="textoCerrar c">Administra, elimina y añade categoriasy colaboradores nuevos</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-tags" style="display: flex; justify-content: center; align-items: center; font-size: 36px;"></i>
+            </div>
+            <div class="cardC" onclick="dirigirMotoristas()">
+                <div class="cardCFlex">
+                    <div>
+                        <p class="tituloC">Administrar Motoristas</p>
+                        <p class="textoCerrar c">Gestiona los motoristas y las solicitudes de nuevos aplicantes.</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-motorcycle" style="display: flex; justify-content: center; align-items: center; font-size: 40px;"></i>
+            </div>
+            <div class="cardC" onclick="dirigirOrdenes()">
+                <div class="cardCFlex">
+                    <div>
+                        <p class="tituloC">Administrar Ordenes</p>
+                        <p class="textoCerrar c">Gestiona las ordenes disponibles y que motoristas la realizan.</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-bag-shopping" style="display: flex; justify-content: center; align-items: center; font-size: 36px;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--OffCanvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #d9d9d9;">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="links">
+                <div style="margin-bottom: 30px;">
+                    <a class="textoCanvas" href="administrarEmpresa.html">Administrar Categoria</a>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <a class="textoCanvas" href="administarMotoristas.html">Motoristas</a><br>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <a class="textoCanvas" href="ordenes.html">Ver ordenes disponibles</a>
+                </div>
+                
+                
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;">
+                <i class="fa-solid fa-door-open" style="font-size: 50px;"></i>
+                <br>
+                <button class="botonCierre" onclick="dirigirIndex()">Cerrar Sesión</button>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="../js/controladorWeb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

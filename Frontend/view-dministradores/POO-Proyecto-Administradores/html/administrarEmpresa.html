@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hermes Delivery</title>
+    <link rel="shortcut icon" href="../img/Logo-Hermes.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad57b9bf14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleadmin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atomic+Age">
+</head>
+<body>
+    <nav id="navBar" class="flexNav">
+        <div class="textoCentrar">
+            <i class="fa-solid fa-arrow-left" style="font-size:35px; color: grey; " onclick="mostrarPaginaPrincipal()" ></i> 
+            <p style="margin-left: 50px; font-size: 30px; color: #8FDC56;">Administrar Contenido</p>
+        </div>
+        <p class="TituloNav">Hermes</p>
+        <i class="fa-solid fa-user-secret" style="color: #8FDC56; font-size: 40PX;"></i>
+    </nav>
+
+    <section id="ContenedorCont">
+        <main id="navegadorCont">
+            <div id="EmpresasWin" class="switcher" onclick="volverEmpresas()"><i class="fa-solid fa-building"></i></div>
+            <div id="CategoriasWin" onclick="mostrarCategorias()"><i class="fa-solid fa-table-cells-large"></i></div>
+            <div id="ProductWin" onclick="volverProductos()"><i class="fa-sharp fa-solid fa-bag-shopping"></i></div>
+        </main>
+        <main>
+            <section id="categorias" style="display:none;">
+                <div style="display: flex;justify-content: space-around;margin: 20px;"></div>
+                    <div class="container">
+                        <div class="row" id="containerCategorias">
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/bebidas.jpg" alt="">
+                                    <p class="textoCategoria">Bebidas</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/Electronica.jpg" alt="">
+                                    <p class="textoCategoria">Electronica</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/farmacia.jpg" alt="">
+                                    <p class="textoCategoria">Farmacia</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/Hamburguesa.jpg" alt="">
+                                    <p class="textoCategoria">Hamburguesa</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/pizza.jpg" alt="">
+                                    <p class="textoCategoria">Pizza</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/categorias/sushi.jpg" alt="">
+                                    <p class="textoCategoria">Sushi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            
+            <section id="Empresa" style="display: block;">
+                <div style="display: flex;justify-content: space-around; margin: 20px;">
+                    <a href="/html/agergarEmpresa.html">
+                        <div class="divBotones textoCentrar">
+                            <p class="textoBotone">Agregar</p>
+                        </div>
+                    </a>
+                    <a href="/html/editarEmpresas.html">
+                        <div class="divBotones textoCentrar">
+                            <p class="textoBotone">Editar</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row" id="containerProductos">
+                        <div class="col-4">
+                            <div class="cardCategoria" style="margin-bottom: 30px;">
+                                <img class="imgCategoria" src="../img/Electronica/diusa banner.png" alt="">
+                                <div style="display: flex; align-items: center;">
+                                    <img style="margin-left: 10px ;" class="logoredondo" src="../img/Electronica/diusa logo.jpg" alt="">
+                                    <div>
+                                        <p class="textoCategoria segundo">DIUNSA</p>
+                                        <p class="textoCategoriat"> Empresa nacional con gran calidad en una gran variedad de productos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cardCategoria" style="margin-bottom: 30px; padding: 10px;">
+                                <img class="imgCategoria" src="../img/Electronica/jetstereobanner.png" alt="">
+                                <div style="display: flex; align-items: center;">
+                                    <img style="margin-left: 10px ;" class="logoredondo" src="../img/Electronica/jestereologo.png" alt="">
+                                    <div>
+                                        <p class="textoCategoria segundo">JETSTEREO</p>
+                                        <p class="textoCategoriat"> Empresa nacional con productos electronicos de la mejor calidad para su mano</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="productos" style="display:none ">
+                <div style="display: flex;justify-content: space-around;margin: 20px;">
+                    <a href="/html/agregarProducto.html">
+                        <div class="divBotones textoCentrar" >
+                            <p class="textoBotone">Agregar</p>
+                        </div>
+                    </a>
+                    <a href="/html/editarProducto.html">
+                        <div class="divBotones textoCentrar">
+                            <p class="textoBotone" >Editar</p>
+                        </div>
+                    </a>
+                </div>
+                    <div class="container">
+                        <div class="row" id="Item">
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/Electronica/s20.jpg" alt="">
+                                    <div style="display: flex; align-items: center;">
+                                        <div>
+                                            <p class="textoCategoria segundo">Samsung Galaxy S20</p>
+                                            <p class="textoCategoriat"> $ 590</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cardCategoria" style="margin-bottom: 30px;">
+                                    <img class="imgCategoria" src="../img/Farmacia/Siman/panadol extra fuerte.jpg" alt="">
+                                    <div style="display: flex; align-items: center;">
+                                        <div>
+                                            <p class="textoCategoria segundo">Panadol Extra Fuerte Multi-Sintomas</p>
+                                            <p class="textoCategoriat"> $ 1 C/u</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </section>
+    
+    <script src="../js/controladorEmpresas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
