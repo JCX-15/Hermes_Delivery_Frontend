@@ -51,7 +51,7 @@ body{
 .botonVer{
     width: 131px;
     height: 40px;
-    background: rgba(255, 247, 47, 0.8);
+    background: rgba(172, 255, 47, 0.562);
     border: 2px solid rgba(0, 0, 0, 0.521);
     border-radius: 100px!important;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -137,4 +137,38 @@ body{
 
 .itemDatosPerfil{
     margin-top: 10px;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+
+  .alert.success {
+    background-color: #04AA6D;
+}
+
+.img-logo{
+    width: 128px;
+    height: 128px;
 }

@@ -138,3 +138,11 @@ body{
 .itemDatosPerfil{
     margin-top: 10px;
 }
+
+.itemsOrdenes{
+    padding-left: 0rem !important;
+}
+
+.navTabsMenu{
+    color: white !important;
+}

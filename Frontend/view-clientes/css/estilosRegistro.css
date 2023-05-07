@@ -1,4 +1,6 @@
 #formulario{
+    display: flex;
+    justify-content: center;
     background-color: transparent;
     margin: 30px;
     padding: 25px;
@@ -19,17 +21,19 @@
 }
 
 .botonHermes{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
     position: absolute;
-    width: 166px;
-    height: 48px;
-    left: 40%;
-    top: 90%;
-    background-color: #68E265 !important;
-    border-color: #68E265 !important;
 }
 
 .txtDdeCajas{
     font-family: 'Laila';
     color: #000000;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
 }

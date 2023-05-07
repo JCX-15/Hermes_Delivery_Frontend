@@ -1,12 +1,5 @@
+localStorage.clear()
 let users = {}
-function registrarUsuario() {
-    var nombre = document.getElementById('nombreRegis').value;
-    var numeroTel = document.getElementById('numeroRegis').value;
-    var email = document.getElementById('emailRegis').value;
-    var contrasena = document.getElementById('contrasenaRegis').value;
-   
-    console.log(nombre, numeroTel, email, contrasena,);
-}
 
 const obtenerUsers = () => {
     fetch('http://localhost:3003/users', {
@@ -36,6 +29,7 @@ const iniciarSesion = () => {
                 console.log("contrasenia coincide");
                 localStorage.setItem("id", users[i]._id);
                 localStorage.setItem("usuario", users[i].correo);
+                localStorage.setItem("nombre", users[i].nombre)
                 console.log(localStorage);
                 window.location.href = "mainCliente.html";
             }else{
@@ -46,5 +40,5 @@ const iniciarSesion = () => {
             console.log("usuario no encontrado");
         }
     }
-    console.log("----------------------------------------------------");
+    console.log("---------------------------------------------------");
 }

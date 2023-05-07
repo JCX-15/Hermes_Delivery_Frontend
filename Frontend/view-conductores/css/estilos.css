@@ -25,6 +25,9 @@ body{
 
 .marca-hermes{
     font-family: 'Atomic Age', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navPrincipal{
