@@ -19,21 +19,22 @@
         <div id="formularioInicio" class="CentrarBotonesInicio">
             <p class="TextoInicio"> Iniciar Sesión</p>
             <div class="centrar formularioGrupo" id="grupoUsuariorRegistrado">
-                <input type="text" class=" formulario_input" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
+                <input type="text" class=" formulario_input" id="usuario" placeholder="Ingresa tu usuario">
             </div>
             <div class="centrar formularioGrupo" id="grupoContraseñaRegistrada">
-                <input type="password" class=" formulario_input" name="contraseña" id="contraseña" placeholder="Ingresa tu contraseña">
+                <input type="password" class="formulario_input" id="contraseña" placeholder="Ingresa tu contraseña">
             </div>
             <p>Servidor abajo solo presione iniciar sesion</p>
-            <button type="button" class="buttonInicio" onclick="envioTemporal()">Iniciar Sesion</button>
+            <button type="button" class="buttonInicio" onclick="validarLog()">Iniciar Sesion</button>
             <div class="centrar" id="errorInicio" style="display: none ; text-align: center;"></div>
         </div>
         <img src="img/FoodVector.png" alt="">
     </form>
 
-    <script src="js/validarFormulario.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/validarFormulario.js"></script>
 </body>
 </html>
